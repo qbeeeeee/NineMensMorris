@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nine Men's Morris</title>
+	
+	<!-- Bootstrap core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/ninemenmorris.css" rel="stylesheet">
+	<script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/ninemenmorris.js"></script>
+</head>
+<body>
+    <h1 id='nmm_header'>NineMenMorris</h1>
+	<div id='nmm_board'>
+	</div>
+	<br/>
+	<div id='game_initializer'>
+		<input id='username'>
+		<select id='pcolor'>
+		<option value='W'>W</option>
+		<option value='B'>B</option>
+		</select>
+		<button id='nmm_login' class='btn btn-primary'>ΕΙΣΟΔΟΣ ΣΤΟ ΠΑΙΧΝΙΔΙ</button><br>	
+	</div>
+	<div id='game_info'>
+	</div>
+	<div id='move_div'>
+		Δώσε κίνηση (x1 y1 color): <input id='the_move'>  <button id='do_move' class='btn btn-primary'>ΚΑΝΕ ΤΗΝ ΚΙΝΗΣΗ</button><br>
+	</div>
+
+	<br/><br/>
+	<div id='removepawn'>
+		Δώσε κίνηση για να κανεις remove καποιο enemy pawn: <input id='the_remove'> <button id='do_remove' class='btn btn-primary'> ΚΑΝΕ REMOVE </button><br>
+	</div>
+	
+	<button id='nmm_reset' class='btn btn-primary'>ΕΝΑΡΞΗ/RESET</button><br>
+	<div id='htpwrapper'>	
+		<div id='howtoplayheader'>
+		How to play:
+		</div>
+		<br/>
+		<div id='howtoplay'> 
+		Βάλε το όνομα σου , διάλεξε πιο χρώμα θέλεις και κάνε είσοδο στο παιχνίδι. <br/>
+		Για να εισάγεις ένα πιόνι δώσε 2 αριθμούς για τις συντεταγμένες και το χρώμα σου σε κεφαλαίο(πχ: 1 1 W) <br/>
+		Αν δημιουργηθεί μία τριάδα τότε δώσε 2 αριθμούς για τις συντεταγμένες του αντίπαλου πιονιού που θες να αφερέσεις και το χρώμα σου (πχ: 4 1 W) <br/>
+		Αν έχεις εισάγει και τα 9 πιόνια σου τότε δώσε 4 νούμερα για τις συντεταγμένες του πιονιού που θες να κουνήσεις και σε πιο μέρος θες να τo κουνήσεις(πχ: 1 1 4 1) <br/>
+		Το πρώτο τετράγωνο για τις συντεταγμένες είναι το τέρμα κάτω αριστερά και ο πρώτος αριθμός είναι για τις γραμμές ενώ ο δεύτερος για τις στείλες<br/>
+		Enjoy :))))))) 
+		</div>
+	</div>
+</body>
+</html>
